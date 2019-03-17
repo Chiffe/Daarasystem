@@ -1,0 +1,195 @@
+<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+<ul class="page-sidebar-menu  page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+    <li class="nav-item start active">
+        <a href="home.php" class="nav-link">
+            <i class="icon-home"></i>
+            <span class="title">Dashboard</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="emploi_temps.php" class="nav-link ">
+            <i class="fa fa-calendar"></i>
+            <span class="title">Emploi du temps</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="classes.php" class="nav-link nav-toggle">
+            <i class="icon-users"></i>
+            <span class="title">Gestion Classe</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="add_classe.php" class="nav-link ">
+                    <span class="title">Créer une classe</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="classes.php" class="nav-link ">
+                    <span class="title">Liste des classes</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="assoc_class_matiere.php" class="nav-link ">
+                    <span class="title">Associer des matières</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="salles.php" class="nav-link nav-toggle">
+            <i class="icon-grid"></i>
+            <span class="title">Gestion Salle</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="add_salle.php" class="nav-link ">
+                    <span class="title">Créer une salle</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="salles.php" class="nav-link ">
+                    <span class="title">Liste des salles</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="matieres.php" class="nav-link nav-toggle">
+            <i class="icon-book-open"></i>
+            <span class="title">Gestion Matière</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="add_matiere.php" class="nav-link ">
+                    <span class="title">Créer une matière</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="matieres.php" class="nav-link ">
+                    <span class="title">Liste des matières</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="profs.php" class="nav-link nav-toggle">
+            <i class="icon-briefcase"></i>
+            <span class="title">Gestion Personnel</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="add_prof.php" class="nav-link ">
+                    <span class="title">Ajouter un professeur</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="profs.php" class="nav-link ">
+                    <span class="title">Liste des professeurs</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="eleves.php" class="nav-link nav-toggle">
+            <i class="icon-graduation"></i>
+            <span class="title">Gestion Élèves</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="eleves.php" class="nav-link ">
+                    <span class="title">Afficher les élèves</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="undefined" class="nav-link ">
+                    <span class="title">Dossier scolaire</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="absents.php" class="nav-link ">
+                    <span class="title">Liste des absents</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="carnet_note.php" class="nav-link nav-toggle">
+            <i class="icon-notebook"></i>
+            <span class="title">Gestion Notes</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="add_note.php" class="nav-link ">
+                    <span class="title">Ajouter des notes</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="edit_note.php" class="nav-link ">
+                    <span class="title">Modifier des notes</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="carnet_note.php" class="nav-link ">
+                    <span class="title">Carnet de note</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="eleve_moyennes.php" class="nav-link ">
+                    <span class="title">Liste des moyennes</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="heading">
+        <h3 class="uppercase font-green">Réglage interface</h3>
+    </li>
+    <li class="nav-item">
+        <a href="eleves.php" class="nav-link nav-toggle">
+            <i class="fa fa-puzzle-piece"></i>
+            <span class="title">Catégorie</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link ">
+                    <span class="title">Ajouter une catégorie</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link ">
+                    <span class="title">Afficher les catégories</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="eleves.php" class="nav-link nav-toggle">
+            <i class="icon-layers"></i>
+            <span class="title">Cycle</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link ">
+                    <span class="title">Ajouter un cycle</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link ">
+                    <span class="title">Afficher les cycles</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
