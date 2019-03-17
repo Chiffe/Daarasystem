@@ -1,0 +1,14 @@
+.login {background:url('../img/fd_login.jpg') center center fixed; background-size:cover;}
+.login .logo img {width:180px; height:auto;}
+
+.login .logo {width:400px; margin:120px auto 0;}
+.login .content {margin:0 auto 10px; padding:30px;}
+.login .content .form-actions {border-bottom:none;}
+
+@media (max-width: 440px) {
+    .login .logo {width:280px;}
+}
+
+.forget_passwd_response {margin-top:65px; margin-bottom:30px; display:none;}
+.forget_passwd_response .mt-element-list {background-color:#fff;}
+.forget_passwd_response .mt-element-list .list-simple.mt-list-container ul>.mt-list-item>.list_form_action {float:right; margin-top:20px;}

@@ -1,0 +1,4 @@
+span.event_action {position:absolute; bottom:5px; z-index:10;}
+span.event_trash {right:5px;}
+span.event_edit {left:5px;}
+.fc-short span.event_action {bottom:0;}

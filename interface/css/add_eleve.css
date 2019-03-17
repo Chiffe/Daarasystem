@@ -1,0 +1,5 @@
+#cont_cycle {display:flex; flex-flow:row wrap; justify-content:space-around; align-items:center;}
+#cont_cycle .cycle_item {cursor:pointer;  background-color:#f1f1f1; border:1px solid #cacaca; width:200px; border-radius:25% !important; height:200px; text-align:center; padding:50px 5px 0; margin:0 10px 25px 0; transition:all .5s ease;}
+#cont_cycle .cycle_item i {font-size:36px; line-height:36px;}
+#cont_cycle .cycle_item p {margin:10px 0 0; font-size:1.8em;}
+#cont_cycle .cycle_item:hover {background-color:#1d9d38; color:#fff; border-color:#1d9d38; transition:all .5s ease;}

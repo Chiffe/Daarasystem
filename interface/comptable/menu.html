@@ -1,0 +1,168 @@
+<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+<ul class="page-sidebar-menu page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+    <li class="nav-item start active">
+        <a href="home.php" class="nav-link">
+            <i class="icon-home"></i>
+            <span class="title">Dashboard</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="factures.php" class="nav-link nav-toggle">
+            <i class="icon-credit-card"></i>
+            <span class="title">Gestion recouvrement</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="factures.php" class="nav-link ">
+                    <span class="title">Liste des factures/reçus</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="facturer_eleves.php" class="nav-link ">
+                    <span class="title">Facturer les élèves</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="complement_paiement.php" class="nav-link ">
+                    <span class="title">Complément de paiement</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="paiement_arriere.php" class="nav-link ">
+                    <span class="title">Paiment arriérés</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="arrieres.php" class="nav-link ">
+                    <span class="title">Liste des arriérés payés</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="paiement_annuler.php" class="nav-link ">
+                    <span class="title">Liste des paiements annulés</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="bank.php" class="nav-link nav-toggle">
+            <i class="fa fa-bank"></i>
+            <span class="title">Banque</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="bank.php" class="nav-link ">
+                    <span class="title">Historique / Dépôt</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="financier_jours.php" class="nav-link nav-toggle">
+            <i class="icon-bar-chart"></i>
+            <span class="title">Etat financier</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="financier_jours.php" class="nav-link ">
+                    <span class="title">Par jours</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="financier_recus.php" class="nav-link ">
+                    <span class="title">Par reçus</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="financier_rubriques.php" class="nav-link ">
+                    <span class="title">Par rubriques</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="eleve_abonnes.php" class="nav-link nav-toggle">
+            <i class="fa fa-bus"></i>
+            <span class="title">Transport - Cantine - Blouse</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="eleve_abonnes.php" class="nav-link ">
+                    <span class="title">Liste des abonnés</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="achat_eleves.php" class="nav-link ">
+                    <span class="title">Abonnement/Achat</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="blouses.php" class="nav-link ">
+                    <span class="title">Liste des blouses achetées</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="eleves.php" class="nav-link nav-toggle">
+            <i class="icon-user-follow"></i>
+            <span class="title">Gestion des élèves</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="add_eleve.php" class="nav-link">
+                    <span class="title">Ajouter un élève</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="eleves.php" class="nav-link">
+                    <span class="title">Liste des élèves</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="effectif_eleves.php" class="nav-link">
+                    <span class="title">Effectif des élèves</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="eleve_moyennes.php" class="nav-link">
+                    <span class="title">Liste des moyennes</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="abandon_eleves.php" class="nav-link">
+                    <span class="title">Liste des abandonnés</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="archive_classes.php" class="nav-link nav-toggle">
+            <i class="fa fa-archive"></i>
+            <span class="title">Archivage</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu">
+            <li class="nav-item">
+                <a href="archive_cycles.php" class="nav-link ">
+                    <span class="title">Archives par cycle</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="archive_classes.php" class="nav-link ">
+                    <span class="title">Archives par classe</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
