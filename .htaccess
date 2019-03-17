@@ -1,0 +1,15 @@
+#Order Allow,Deny
+#Allow from 78.126.71.76 78.119.158.45 90.120.174.58
+
+# Désactiver l'affichage du contenu des répertoires
+Options All -Indexes
+# Masquer les informations du serveur
+ServerSignature Off
+# Encodage par défaut des fichiers textes et HTML
+AddDefaultCharset UTF-8
+# Protéger les fichiers .htaccess et .htpasswds
+<Files ~ "^.*\.([Hh][Tt][AaPp])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
