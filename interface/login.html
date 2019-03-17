@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="fr" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="fr" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>DaaraSystem - Login</title>
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="ToDo" name="description" />
+        <meta content="Bew-Works" name="author" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="css/core/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/core/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/core/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/core/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/plugins/ladda-themeless.min.css" rel="stylesheet" type="text/css">
+        <link href="css/plugins/sweetalert.css" rel="stylesheet" type="text/css">
+        <link href="css/global/components.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/global/plugins.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/login.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/page_login.css" rel="stylesheet" type="text/css" />
+    </head>
+    <!-- END HEAD -->
+
+    <body class=" login">
+        <div class="logo bg-green">
+            <img src="img/logo_blanc.png" class="img-responsive center-block" alt="Logo Daarasystem" height="250" width="250">
+        </div>
+        <!-- BEGIN LOGIN -->
+        <div class="content" style="overflow:visible;">
+            <!-- Zone pour les messages d'arlertes ---------------
+            ------------- autres classes : alert-danger; alert-warning; alert-info
+            Todo : Bien sûr, ne faire apparaitre que lorsque c'est nécessaire  --->
+            <div class="alert alert-success fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa-lg fa fa-check"></i> Zone texte pour les messages d'alertes
+            </div>
+            <div class="alert alert-warning fade in">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                <i class="fa-lg fa fa-warning"></i> Autre exemple, WARNING
+            </div>
+            <!-- ------------------------------------------------->
+            <form class="login-form" action="undefined" method="post">
+                <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+                <div class="form-group">
+                    <input class="form-control form-control-solid placeholder-no-fix" type="text" required="required" autocomplete="off" placeholder="Nom d'utilisateur" name="login" /> </div>
+                <div class="form-group">
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" required="required" autocomplete="off" placeholder="Mot de passe" name="password" /> </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn green uppercase">Se connecter</button>
+                    <a href="javascript:;" id="forget-password" class="forget-password">Mot de passe oublié ?</a>
+                </div>
+                <!-- Bloc BewWorks à SUPPRIMER ---->
+                <!-- ToDo : Lors de la suppression, supprimer style sur div.content -->
+                <div class="well" style="border:1px solid red; margin:40px 0; padding:5px; position:absolute; top:7px; left:400px; width:400px;">
+                    <p class="text-center" style="margin:0 0 5px;">Block test BewWorks à <strong>SUPPRIMER</strong></p>
+                    <p>Cliquez sur le compte voulu</p>
+                    <ul>
+                        <li><a href="admin/home.php">Admin</a></li>
+                        <li><a href="comptable/home.php">Comptable</a></li>
+                        <li><a href="parent/home.php">Parent</a></li>
+                        <li><a href="directeur/home.php">Directeur Enseignant</a></li>
+                        <li><a href="prof/home.php">Enseignant</a></li>
+                    </ul>
+                </div>
+                <!-- ---------- ---------- -------->
+            </form>
+            <!-- BEGIN FORGOT PASSWORD FORM -->
+            <form class="forget-form" action="undefined" method="post">
+                <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+                <h3 class="font-green">Mot de passe oublié ?</h3>
+                <p>Entrez votre adresse e-mail pour réinitialiser votre mot de passe.</p>
+                <!-- Bloc BewWorks à SUPPRIMER ---->
+                <!-- ToDo : Lors de la suppression, supprimer style sur div.content -->
+                <div class="well" style="border:1px solid red; margin:40px 0; padding:5px; position:absolute; top:7px; left:400px; width:400px;">
+                    <p class="text-center" style="margin:0 0 5px;">Block test BewWorks à <strong>SUPPRIMER</strong></p>
+                    <p>Cliquez sur l'adresse voulu</p>
+                    <ul>
+                        <li style="cursor:pointer;" data-email="unseulcompte@gmail.com" onclick="$('.forget-form input[name=\'email\']').val($(this).attr('data-email'));">unseulcompte@gmail.com (Un seul compte associé à l'adresse mail)</li>
+                        <li style="cursor:pointer;" data-email="plusieurscomptes@gmail.com" onclick="$('.forget-form input[name=\'email\']').val($(this).attr('data-email'));">plusieurscomptes@gmail.com (Plusieurs comptes associé à l'adresse mail)</li>
+                        <li style="cursor:pointer;" data-email="pasdecompte@gmail.com" onclick="$('.forget-form input[name=\'email\']').val($(this).attr('data-email'));">pasdecompte@gmail.com (Aucun compte associé à l'adresse mail)</li>
+                    </ul>
+                    <p>Lien pour la page de réinitialisation :<br><a href="newpasswd.html">Page de réinitialisation</a></p>
+                </div>
+                <!-- ---------- ---------- -------->
+                <div class="form-group">
+                    <input class="form-control placeholder-no-fix" type="email" required="required" autocomplete="off" placeholder="Email" name="email" /> </div>
+                <div class="form-actions">
+                    <button type="button" id="back-btn" class="btn green btn-outline">Retour</button>
+                    <button type="submit" class="btn btn-success uppercase pull-right mt-ladda-btn ladda-button" data-style="slide-left"><span class="ladda-label">Envoyer</span></button>
+                </div>
+            </form>
+            <!-- END FORGOT PASSWORD FORM -->
+        </div>
+        <!-- BLOCK ANSWER RESPONSE FORGET PASSWORD -->
+        <div class="forget_passwd_response col-md-offset-3 col-md-6">
+            <div class="mt-element-list">
+                <div class="mt-list-head list-simple ext-1 font-white bg-green">
+                    <div class="list-head-title-container">
+                        <h3 class="list-title">Pour quel compte voulez-vous réinitialiser le mot de passe ?</h3>
+                    </div>
+                </div>
+                <div class="mt-list-container list-simple ext-1">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <!-- END BLOCK ANSWER RESPONSE FORGET PASSWORD -->
+        <!--[if lt IE 9]>
+        <script src="js/core/respond.min.js"></script>
+        <script src="js/core/excanvas.min.js"></script>
+        <script src="js/core/ie8.fix.min.js"></script>
+        <![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/core/js.cookie.min.js" type="text/javascript"></script>
+        <script src="js/core/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="js/core/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="js/core/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="js/plugins/spin.min.js" type="text/javascript"></script>
+        <script src="js/plugins/ladda.min.js" type="text/javascript"></script>
+        <script src="js/plugins/sweetalert.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="js/global/app.min.js" type="text/javascript"></script>
+        <script src="js/page_login.js" type="text/javascript"></script>
+    </body>
+</html>
